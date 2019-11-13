@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/play/skeletal
+    docker:
+      - image: circleci/node:4.8.2-pb
+    steps:
+      - checkout
+      - run:
+          name: update npm
+          command: 'sudo npm install -g npm@latest'
+      - restore_cache:
+          key: dependency
