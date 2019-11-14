@@ -1,0 +1,15 @@
+{
+ "compilerOptions": {
+    "target": "es6",
+    "lib": [ "es2015" ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "inlineSourceMap": true,
+    "declaration": false,
+    "noImplicitAny": false
+  },
+  "exclude": [
+    "node_modules",
+    "plugins.ts"
+  ]
+}

@@ -16,7 +16,9 @@
     "type": "git",
     "url": "git+https://github.com/BhattcharyaCodes/skeletal.git"
   },
-  "author": "Sankalan Parajuli",
+  "author": "Puja Bhattacharya",
+
+
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/BhattcharyaCodes/skeletal/issues"
@@ -39,5 +41,9 @@
     "puppeteer": "^1.6.0",
     "csvtojson": "^2.0.8",
     "mongodb": "^3.1.13"
-  }
+  },
+  "keywords": [
+    "Protractor",
+    "Typescript",
+  ]
 }
