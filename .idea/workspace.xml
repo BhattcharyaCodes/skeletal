@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5086382-fe82-4726-8ce0-1584c03cd4c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e_test_suite/spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_test_suite/spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e_test_suite/spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_test_suite/spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/protractor/exampleTypescript/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protractor/exampleTypescript/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/protractor/exampleTypescript/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/protractor/exampleTypescript/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protractor.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/protractor.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protractor.conf.ts" beforeDir="false" afterPath="$PROJECT_DIR$/protractor.conf.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
