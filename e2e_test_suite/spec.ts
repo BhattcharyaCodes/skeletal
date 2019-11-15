@@ -24,7 +24,7 @@ describe('homepage', () => {
         expect(res).toBeTruthy();
     });
 
-    it('should be able to navigate to the first search result', async() => {
+    xit('should be able to navigate to the first search result', async() => {
 
     });
 
