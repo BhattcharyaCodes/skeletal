@@ -7,12 +7,9 @@
     "inlineSourceMap": true,
     "declaration": false,
     "noImplicitAny": false
-  }
-//  "include": [
-//    "./e2e_test_suite/spec.js"
-//  ],
-//  "exclude": [
-//    "node_modules",
-//    "plugins.ts"
-//  ]
+  },
+  "exclude": [
+    "node_modules",
+    "plugins.ts"
+  ]
 }

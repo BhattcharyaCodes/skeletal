@@ -1,5 +1,5 @@
-import { PluginConfig as PluginConfig } from "./plugins";
-import { browser, Config, ProtractorBrowser } from "protractor";
+import { browser, Config, ProtractorBrowser } from 'protractor';
+import protractor = require('protractor');
 
 var HtmlReporter = require('protractor-beautiful-reporter');
 
@@ -12,7 +12,7 @@ export const config: Config = {
        },
    },
    framework: 'jasmine',
-   specs: ['./e2e_test_suite/spec.ts'],
+   specs: ['./e2e_test_suite/spec.js'],
 
     jasmineNodeOpts: {
         defaultTimeoutInterval: 90000
@@ -26,6 +26,6 @@ export const config: Config = {
         browser.manage().timeouts().implicitlyWait(5000);
    },
     onComplete: () => {
-        browser.pause();
+        browser.close();
     }
 };
