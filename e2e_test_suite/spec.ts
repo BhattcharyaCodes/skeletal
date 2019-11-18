@@ -28,32 +28,32 @@ describe('homepage', () => {
     });
 
     it('should search for the input text', async() => {
-        var search_box_locator = "input.['gLFyf gsfi']";
-        let search_box = await $(search_box_locator);
-        search_box.sendKeys(search_text, protractor.Key.ENTER, protractor.Key.NULL);
-        //let res = 
-        // await browser.wait(EC.textToBePresentInElement(search_box, search_text), 8000);
-        expect(await browser.wait(EC.textToBePresentInElement(search_box, search_text), 8000)).toBeTruthy();
+        await $('input.gLFyf').sendKeys(search_text, protractor.Key.ENTER, protractor.Key.NULL);
+        let result_string = element(by.id('resultStats')).isPresent();
+        expect(result_string).toBeTruthy();
     });
 
-    // it('should be able to navigate to the first search result', async() => {
+    // it('should should not search anything if input belongs to {'',!, @, $,#}', async() => {
+      //  let expected_string: string = "Your search - !,@,#,$ - did not match any documents.";
 
     // });
 
     // it('should be able to navigate to the first search result', async() => {
 
     // });
-    // it('should be able to navigate to the first search result', async() => {
+    // it('should have Minimum lengths be set to 1 for the input boxes', async() => {
 
+    // });
+    // it('should have a Maximum lengths of word char for the input boxes', async() => {
+        let locator_aria_label: string = 'gLFyf gsfi';
+        let maximum_len:string = '2048'; //maxlength attribute name for input
+        
     // });
     // it('should be able to navigate to the first search result', async() => {
 
     // });
-    // it('should be able to navigate to the first search result', async() => {
-
-    // });
-    // it('should be able to navigate to the first search result', async() => {
-
+    // it('should contain the horizotnal navigation bar to group the search results', async() => {
+// let top_nav_bar = $(div#top_nav));
     // });
     // it('should be able to navigate to the first search result', async() => {
 

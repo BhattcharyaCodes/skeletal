@@ -528,6 +528,222 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "screenShotFile": "images/006100ec-00ee-00d4-0009-00f700fc0020.png",
         "timestamp": 1574105586549,
         "duration": 34
+    },
+    {
+        "description": "should open the google search engine|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 22373,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00fa009d-00b8-00a1-003a-0030002600d4.png",
+        "timestamp": 1574112246976,
+        "duration": 14
+    },
+    {
+        "description": "should load the google logo image|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 22373,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00d2003a-00cf-002b-002e-000f00c6006e.png",
+        "timestamp": 1574112252972,
+        "duration": 94
+    },
+    {
+        "description": "should search for the input text|homepage",
+        "passed": false,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 22373,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": [
+            "Failed: No element found using locator: By(css selector, *[id=\"fakebox-input\"])"
+        ],
+        "trace": [
+            "NoSuchElementError: No element found using locator: By(css selector, *[id=\"fakebox-input\"])\n    at /Users/animesh/play/skeletal/node_modules/protractor/built/element.js:814:27\n    at ManagedPromise.invokeCallback_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:1376:14)\n    at TaskQueue.execute_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:2927:27\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)Error\n    at ElementArrayFinder.applyAction_ (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:459:27)\n    at ElementArrayFinder.<computed> [as sendKeys] (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:91:29)\n    at ElementFinder.<computed> [as sendKeys] (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:831:22)\n    at /Users/animesh/play/skeletal/e2e_test_suite/spec.ts:32:47\n    at Generator.next (<anonymous>)\n    at /Users/animesh/play/skeletal/e2e_test_suite/spec.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/Users/animesh/play/skeletal/e2e_test_suite/spec.js:4:12)\n    at UserContext.<anonymous> (/Users/animesh/play/skeletal/e2e_test_suite/spec.ts:30:54)\n    at /Users/animesh/play/skeletal/node_modules/jasminewd2/index.js:112:25\nFrom: Task: Run it(\"should search for the input text\") in control flow\n    at UserContext.<anonymous> (/Users/animesh/play/skeletal/node_modules/jasminewd2/index.js:94:19)\n    at attempt (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at runNext (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)\n    at /Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13\n    at /Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9\n    at /Users/animesh/play/skeletal/node_modules/jasminewd2/index.js:64:48\n    at ControlFlow.emit (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/events.js:62:21)\n    at ControlFlow.shutdown_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:2674:10)\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:2599:53\nFrom asynchronous test: \nError\n    at Suite.<anonymous> (/Users/animesh/play/skeletal/e2e_test_suite/spec.ts:30:5)\n    at addSpecsToSuite (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)\n    at Env.describe (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)\n    at describe (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)\n    at Object.<anonymous> (/Users/animesh/play/skeletal/e2e_test_suite/spec.ts:6:1)\n    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)\n    at Module.load (internal/modules/cjs/loader.js:914:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:822:14)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "images/00b4008d-003a-0023-00ca-009f00be002a.png",
+        "timestamp": 1574112253978,
+        "duration": 5093
+    },
+    {
+        "description": "should open the google search engine|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 22768,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/007a00df-000c-004b-0040-009000990091.png",
+        "timestamp": 1574113518714,
+        "duration": 89
+    },
+    {
+        "description": "should load the google logo image|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 22768,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/002d007c-0085-00c1-00b6-007e00da00d9.png",
+        "timestamp": 1574113520236,
+        "duration": 116
+    },
+    {
+        "description": "should search for the input text|homepage",
+        "passed": false,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 22768,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": [
+            "Failed: invalid selector: An invalid or illegal selector was specified\n  (Session info: headless chrome=78.0.3904.97)\n  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Mac OS X 10.14.6 x86_64)"
+        ],
+        "trace": [
+            "InvalidSelectorError: invalid selector: An invalid or illegal selector was specified\n  (Session info: headless chrome=78.0.3904.97)\n  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\nFrom: Task: WebDriver.findElements(By(css selector, input.[gLFyf gsfi]))\n    at Driver.schedule (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/webdriver.js:807:17)\n    at Driver.findElements (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/webdriver.js:1048:19)\n    at /Users/animesh/play/skeletal/node_modules/protractor/built/element.js:159:44\n    at ManagedPromise.invokeCallback_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:1376:14)\n    at TaskQueue.execute_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:2927:27\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)Error\n    at ElementArrayFinder.applyAction_ (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:459:27)\n    at ElementArrayFinder.<computed> [as sendKeys] (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:91:29)\n    at ElementFinder.<computed> [as sendKeys] (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:831:22)\n    at /Users/animesh/play/skeletal/e2e_test_suite/spec.ts:35:38\n    at Generator.next (<anonymous>)\n    at /Users/animesh/play/skeletal/e2e_test_suite/spec.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/Users/animesh/play/skeletal/e2e_test_suite/spec.js:4:12)\n    at UserContext.<anonymous> (/Users/animesh/play/skeletal/e2e_test_suite/spec.ts:30:54)\n    at /Users/animesh/play/skeletal/node_modules/jasminewd2/index.js:112:25\nFrom: Task: Run it(\"should search for the input text\") in control flow\n    at UserContext.<anonymous> (/Users/animesh/play/skeletal/node_modules/jasminewd2/index.js:94:19)\n    at attempt (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at runNext (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)\n    at /Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13\n    at /Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9\n    at /Users/animesh/play/skeletal/node_modules/jasminewd2/index.js:64:48\n    at ControlFlow.emit (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/events.js:62:21)\n    at ControlFlow.shutdown_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:2674:10)\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:2599:53\nFrom asynchronous test: \nError\n    at Suite.<anonymous> (/Users/animesh/play/skeletal/e2e_test_suite/spec.ts:30:5)\n    at addSpecsToSuite (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)\n    at Env.describe (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)\n    at describe (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)\n    at Object.<anonymous> (/Users/animesh/play/skeletal/e2e_test_suite/spec.ts:6:1)\n    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)\n    at Module.load (internal/modules/cjs/loader.js:914:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:822:14)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "images/00e700fe-003e-00e5-0044-009000420020.png",
+        "timestamp": 1574113520634,
+        "duration": 226
+    },
+    {
+        "description": "should open the google search engine|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 22882,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00ad00f9-0028-008f-00b5-0051000b00fe.png",
+        "timestamp": 1574113557598,
+        "duration": 13
+    },
+    {
+        "description": "should load the google logo image|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 22882,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00a800d0-00ed-0087-0067-00d800d10008.png",
+        "timestamp": 1574113558186,
+        "duration": 28
+    },
+    {
+        "description": "should search for the input text|homepage",
+        "passed": false,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 22882,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": [
+            "Failed: No element found using locator: By(css selector, input.gLFyf gsfi)"
+        ],
+        "trace": [
+            "NoSuchElementError: No element found using locator: By(css selector, input.gLFyf gsfi)\n    at /Users/animesh/play/skeletal/node_modules/protractor/built/element.js:814:27\n    at ManagedPromise.invokeCallback_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:1376:14)\n    at TaskQueue.execute_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:2927:27\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)Error\n    at ElementArrayFinder.applyAction_ (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:459:27)\n    at ElementArrayFinder.<computed> [as sendKeys] (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:91:29)\n    at ElementFinder.<computed> [as sendKeys] (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:831:22)\n    at /Users/animesh/play/skeletal/e2e_test_suite/spec.ts:35:36\n    at Generator.next (<anonymous>)\n    at /Users/animesh/play/skeletal/e2e_test_suite/spec.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/Users/animesh/play/skeletal/e2e_test_suite/spec.js:4:12)\n    at UserContext.<anonymous> (/Users/animesh/play/skeletal/e2e_test_suite/spec.ts:30:54)\n    at /Users/animesh/play/skeletal/node_modules/jasminewd2/index.js:112:25\nFrom: Task: Run it(\"should search for the input text\") in control flow\n    at UserContext.<anonymous> (/Users/animesh/play/skeletal/node_modules/jasminewd2/index.js:94:19)\n    at attempt (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at runNext (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)\n    at /Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13\n    at /Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9\n    at /Users/animesh/play/skeletal/node_modules/jasminewd2/index.js:64:48\n    at ControlFlow.emit (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/events.js:62:21)\n    at ControlFlow.shutdown_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:2674:10)\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:2599:53\nFrom asynchronous test: \nError\n    at Suite.<anonymous> (/Users/animesh/play/skeletal/e2e_test_suite/spec.ts:30:5)\n    at addSpecsToSuite (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)\n    at Env.describe (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)\n    at describe (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)\n    at Object.<anonymous> (/Users/animesh/play/skeletal/e2e_test_suite/spec.ts:6:1)\n    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)\n    at Module.load (internal/modules/cjs/loader.js:914:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:822:14)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "images/007800c4-006e-00f5-00f2-00f500ff00ec.png",
+        "timestamp": 1574113558464,
+        "duration": 5025
+    },
+    {
+        "description": "should open the google search engine|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 23007,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00d100b4-0018-00cc-009b-0035003c0021.png",
+        "timestamp": 1574113654344,
+        "duration": 12
+    },
+    {
+        "description": "should load the google logo image|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 23007,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00ae0080-009c-006e-00ef-00e1007400e1.png",
+        "timestamp": 1574113654833,
+        "duration": 140
+    },
+    {
+        "description": "should search for the input text|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 23007,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00c000f1-0016-0031-00db-00d70082006d.png",
+        "timestamp": 1574113655217,
+        "duration": 2023
     }
 ];
 
