@@ -439,6 +439,95 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "screenShotFile": "images/00120040-00f5-00e1-0022-00e000c40013.png",
         "timestamp": 1574099676524,
         "duration": 119
+    },
+    {
+        "description": "should open the google search engine|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 20618,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00960025-002f-0016-009b-00dc00290090.png",
+        "timestamp": 1574105455559,
+        "duration": 52
+    },
+    {
+        "description": "should load the google image|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 20618,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00d80065-0063-00be-00ad-004400ec00da.png",
+        "timestamp": 1574105458823,
+        "duration": 120
+    },
+    {
+        "description": "should open the google search engine|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 20742,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/004d00ad-0087-007d-00d6-004b002900c6.png",
+        "timestamp": 1574105585614,
+        "duration": 15
+    },
+    {
+        "description": "should load the google logo image|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 20742,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/009d006c-003d-001f-00ee-0027006f0021.png",
+        "timestamp": 1574105586208,
+        "duration": 62
+    },
+    {
+        "description": "should search for the input text|homepage",
+        "passed": false,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 20742,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": [
+            "InvalidSelectorError: invalid selector: An invalid or illegal selector was specified\n  (Session info: chrome=78.0.3904.97)\n  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Mac OS X 10.14.6 x86_64)"
+        ],
+        "trace": [
+            "InvalidSelectorError: invalid selector: An invalid or illegal selector was specified\n  (Session info: chrome=78.0.3904.97)\n  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\nFrom: Task: WebDriver.findElements(By(css selector, input.['gLFyf gsfi']))\n    at Driver.schedule (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/webdriver.js:807:17)\n    at Driver.findElements (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/webdriver.js:1048:19)\n    at /Users/animesh/play/skeletal/node_modules/protractor/built/element.js:159:44\n    at ManagedPromise.invokeCallback_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:1376:14)\n    at TaskQueue.execute_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:2927:27\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)Error\n    at ElementArrayFinder.applyAction_ (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:459:27)\n    at ElementArrayFinder.<computed> [as sendKeys] (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:91:29)\n    at ElementFinder.<computed> [as sendKeys] (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:831:22)\n    at /Users/animesh/play/skeletal/e2e_test_suite/spec.ts:33:20\n    at Generator.next (<anonymous>)\n    at fulfilled (/Users/animesh/play/skeletal/e2e_test_suite/spec.js:5:58)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "images/006100ec-00ee-00d4-0009-00f700fc0020.png",
+        "timestamp": 1574105586549,
+        "duration": 34
     }
 ];
 

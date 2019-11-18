@@ -16,35 +16,64 @@ const protractor_1 = require("protractor");
 describe('homepage', () => {
     let search_text = 'gibberish';
     let url = 'https://www.google.com/';
-    // let EC = protractor.ExpectedConditions;
+    let EC = protractor_1.protractor.ExpectedConditions;
     // let browser_url: any;
     beforeAll(() => __awaiter(void 0, void 0, void 0, function* () {
         protractor_1.browser.waitForAngularEnabled(false);
         debugger;
         yield protractor_1.browser.get(url);
-        //        await browser.get(url);
     }));
     it('should open the google search engine', () => __awaiter(void 0, void 0, void 0, function* () {
         // let wait_urlIs =  await browser.wait(EC.urlIs(url), 10000);
-        // console.log(wait_urlIs);
         // expect(url).toBe(wait_urlIs); 
-        expect(true).toBeTruthy();
         // debugger;
-        expect(protractor_1.browser.getCurrentUrl()).toEqual('https://www.google.com/');
-        // expect(browser.wait(EC.urlIs(url), 10000)).toBeTruthy();
+        expect(protractor_1.browser.getCurrentUrl()).toEqual(url);
     }));
-    it('should load the google image', () => __awaiter(void 0, void 0, void 0, function* () {
+    it('should load the google logo image', () => __awaiter(void 0, void 0, void 0, function* () {
         let google_img = protractor_1.element(protractor_1.by.id('hplogo'));
         expect(google_img.isPresent()).toBeTruthy();
     }));
-    // it('should search for the input text',async() => {
-    //     var search_box_locator = "input.['gLFyf gsfi']";
-    //     let search_box = await $(search_box_locator);
-    //     search_box.sendKeys(search_text, protractor.Key.ENTER, protractor.Key.NULL);
-    //     let res = await browser.wait(EC.textToBePresentInElement(search_box, search_text), 8000);
-    //     expect(res).toBeTruthy();
+    it('should search for the input text', () => __awaiter(void 0, void 0, void 0, function* () {
+        var search_box_locator = "input.['gLFyf gsfi']";
+        let search_box = yield protractor_1.$(search_box_locator);
+        search_box.sendKeys(search_text, protractor_1.protractor.Key.ENTER, protractor_1.protractor.Key.NULL);
+        //let res = 
+        // await browser.wait(EC.textToBePresentInElement(search_box, search_text), 8000);
+        expect(yield protractor_1.browser.wait(EC.textToBePresentInElement(search_box, search_text), 8000)).toBeTruthy();
+    }));
+    // it('should be able to navigate to the first search result', async() => {
     // });
-    // xit('should be able to navigate to the first search result', async() => {
+    // it('should be able to navigate to the first search result', async() => {
+    // });
+    // it('should be able to navigate to the first search result', async() => {
+    // });
+    // it('should be able to navigate to the first search result', async() => {
+    // });
+    // it('should be able to navigate to the first search result', async() => {
+    // });
+    // it('should be able to navigate to the first search result', async() => {
+    // });
+    // it('should be able to navigate to the first search result', async() => {
+    // });
+    // it('should be able to navigate to the first search result', async() => {
+    // });
+    // it('should be able to navigate to the first search result', async() => {
+    // });
+    // it('should be able to navigate to the first search result', async() => {
+    // });
+    // it('should be able to navigate to the first search result', async() => {
+    // });
+    // it('should be able to navigate to the first search result', async() => {
+    // });
+    // it('should be able to navigate to the first search result', async() => {
+    // });
+    // it('should be able to navigate to the first search result', async() => {
+    // });
+    // it('should be able to navigate to the first search result', async() => {
+    // });
+    // it('should be able to navigate to the first search result', async() => {
+    // });
+    // it('should be able to navigate to the first search result', async() => {
     // });
 });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3BlYy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInNwZWMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFBQSwyQ0FBNkY7QUFDN0YsbUNBQW1DO0FBQ25DLGdCQUFnQjtBQUNoQiw0Q0FBNEM7QUFFNUMsUUFBUSxDQUFDLFVBQVUsRUFBRSxHQUFHLEVBQUU7SUFFdEIsSUFBSSxXQUFXLEdBQUcsV0FBVyxDQUFDO0lBQzlCLElBQUksR0FBRyxHQUFHLHlCQUF5QixDQUFDO0lBQ3BDLDBDQUEwQztJQUMxQyx3QkFBd0I7SUFDeEIsU0FBUyxDQUFDLEdBQVEsRUFBRTtRQUNoQixvQkFBTyxDQUFDLHFCQUFxQixDQUFDLEtBQUssQ0FBQyxDQUFDO1FBQ3JDLFFBQVEsQ0FBQztRQUNULE1BQU0sb0JBQU8sQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUFDLENBQUM7UUFDL0IsaUNBQWlDO0lBQzdCLENBQUMsQ0FBQSxDQUFDLENBQUM7SUFFSCxFQUFFLENBQUMsc0NBQXNDLEVBQUUsR0FBUSxFQUFFO1FBQ2pELDhEQUE4RDtRQUM5RCwyQkFBMkI7UUFDNUIsaUNBQWlDO1FBQ2hDLE1BQU0sQ0FBQyxJQUFJLENBQUMsQ0FBQyxVQUFVLEVBQUUsQ0FBQztRQUMxQixZQUFZO1FBQ1osTUFBTSxDQUFDLG9CQUFPLENBQUMsYUFBYSxFQUFFLENBQUMsQ0FBQyxPQUFPLENBQUMseUJBQXlCLENBQUMsQ0FBQztRQUVwRSwyREFBMkQ7SUFDOUQsQ0FBQyxDQUFBLENBQUMsQ0FBQztJQUVILEVBQUUsQ0FBQyw4QkFBOEIsRUFBRSxHQUFRLEVBQUU7UUFDekMsSUFBSSxVQUFVLEdBQUcsb0JBQU8sQ0FBQyxlQUFFLENBQUMsRUFBRSxDQUFDLFFBQVEsQ0FBQyxDQUFDLENBQUM7UUFDMUMsTUFBTSxDQUFDLFVBQVUsQ0FBQyxTQUFTLEVBQUUsQ0FBQyxDQUFDLFVBQVUsRUFBRSxDQUFDO0lBQ2hELENBQUMsQ0FBQSxDQUFDLENBQUM7SUFFSCxxREFBcUQ7SUFDckQsdURBQXVEO0lBQ3ZELG9EQUFvRDtJQUNwRCxtRkFBbUY7SUFDbkYsZ0dBQWdHO0lBQ2hHLGdDQUFnQztJQUNoQyxNQUFNO0lBRU4sNEVBQTRFO0lBRTVFLE1BQU07QUFFVixDQUFDLENBQUMsQ0FBQyJ9
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3BlYy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInNwZWMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFBQSwyQ0FBNkY7QUFDN0YsbUNBQW1DO0FBQ25DLGdCQUFnQjtBQUNoQiw0Q0FBNEM7QUFFNUMsUUFBUSxDQUFDLFVBQVUsRUFBRSxHQUFHLEVBQUU7SUFFdEIsSUFBSSxXQUFXLEdBQUcsV0FBVyxDQUFDO0lBQzlCLElBQUksR0FBRyxHQUFHLHlCQUF5QixDQUFDO0lBQ3BDLElBQUksRUFBRSxHQUFHLHVCQUFVLENBQUMsa0JBQWtCLENBQUM7SUFDdkMsd0JBQXdCO0lBQ3hCLFNBQVMsQ0FBQyxHQUFRLEVBQUU7UUFDaEIsb0JBQU8sQ0FBQyxxQkFBcUIsQ0FBQyxLQUFLLENBQUMsQ0FBQztRQUNyQyxRQUFRLENBQUM7UUFDVCxNQUFNLG9CQUFPLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FBQyxDQUFDO0lBQzNCLENBQUMsQ0FBQSxDQUFDLENBQUM7SUFFSCxFQUFFLENBQUMsc0NBQXNDLEVBQUUsR0FBUSxFQUFFO1FBQ2pELDhEQUE4RDtRQUMvRCxpQ0FBaUM7UUFDaEMsWUFBWTtRQUNaLE1BQU0sQ0FBQyxvQkFBTyxDQUFDLGFBQWEsRUFBRSxDQUFDLENBQUMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxDQUFDO0lBQ2pELENBQUMsQ0FBQSxDQUFDLENBQUM7SUFFSCxFQUFFLENBQUMsbUNBQW1DLEVBQUUsR0FBUSxFQUFFO1FBQzlDLElBQUksVUFBVSxHQUFHLG9CQUFPLENBQUMsZUFBRSxDQUFDLEVBQUUsQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDO1FBQzFDLE1BQU0sQ0FBQyxVQUFVLENBQUMsU0FBUyxFQUFFLENBQUMsQ0FBQyxVQUFVLEVBQUUsQ0FBQztJQUNoRCxDQUFDLENBQUEsQ0FBQyxDQUFDO0lBRUgsRUFBRSxDQUFDLGtDQUFrQyxFQUFFLEdBQVEsRUFBRTtRQUM3QyxJQUFJLGtCQUFrQixHQUFHLHNCQUFzQixDQUFDO1FBQ2hELElBQUksVUFBVSxHQUFHLE1BQU0sY0FBQyxDQUFDLGtCQUFrQixDQUFDLENBQUM7UUFDN0MsVUFBVSxDQUFDLFFBQVEsQ0FBQyxXQUFXLEVBQUUsdUJBQVUsQ0FBQyxHQUFHLENBQUMsS0FBSyxFQUFFLHVCQUFVLENBQUMsR0FBRyxDQUFDLElBQUksQ0FBQyxDQUFDO1FBQzVFLFlBQVk7UUFDWixrRkFBa0Y7UUFDbEYsTUFBTSxDQUFDLE1BQU0sb0JBQU8sQ0FBQyxJQUFJLENBQUMsRUFBRSxDQUFDLHdCQUF3QixDQUFDLFVBQVUsRUFBRSxXQUFXLENBQUMsRUFBRSxJQUFJLENBQUMsQ0FBQyxDQUFDLFVBQVUsRUFBRSxDQUFDO0lBQ3hHLENBQUMsQ0FBQSxDQUFDLENBQUM7SUFFSCwyRUFBMkU7SUFFM0UsTUFBTTtJQUVOLDJFQUEyRTtJQUUzRSxNQUFNO0lBQ04sMkVBQTJFO0lBRTNFLE1BQU07SUFDTiwyRUFBMkU7SUFFM0UsTUFBTTtJQUNOLDJFQUEyRTtJQUUzRSxNQUFNO0lBQ04sMkVBQTJFO0lBRTNFLE1BQU07SUFDTiwyRUFBMkU7SUFFM0UsTUFBTTtJQUNOLDJFQUEyRTtJQUUzRSxNQUFNO0lBQ04sMkVBQTJFO0lBRTNFLE1BQU07SUFDTiwyRUFBMkU7SUFFM0UsTUFBTTtJQUNOLDJFQUEyRTtJQUUzRSxNQUFNO0lBQ04sMkVBQTJFO0lBRTNFLE1BQU07SUFDTiwyRUFBMkU7SUFFM0UsTUFBTTtJQUNOLDJFQUEyRTtJQUUzRSxNQUFNO0lBQ04sMkVBQTJFO0lBRTNFLE1BQU07SUFDTiwyRUFBMkU7SUFFM0UsTUFBTTtJQUNOLDJFQUEyRTtJQUUzRSxNQUFNO0FBRVYsQ0FBQyxDQUFDLENBQUMifQ==
