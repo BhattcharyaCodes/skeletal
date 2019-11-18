@@ -8,7 +8,7 @@ export const config: Config = {
    capabilities: {
        'browserName': 'chrome',
         chromeOptions: {
-           args: [ "--headless", "--disable-gpu" ]
+        //    args: [ "--headless", "--disable-gpu" ]
        },
    },
    framework: 'jasmine',
@@ -18,11 +18,16 @@ export const config: Config = {
         defaultTimeoutInterval: 90000
     },
     onPrepare: () => {
+        jasmine.getEnv().addReporter(new HtmlReporter({
+            baseDirectory: 'Reports/screenshots',
+            screenshotsSubfolder: 'images'
+         }).getJasmine2Reporter());
         let globals = require('protractor');
         let browser: ProtractorBrowser = globals.browser;
    //let browser = globals.browser;
-        browser.ignoreSynchronization = true;
-        browser.manage().window().maximize();
+        // browser.ignoreSynchronization = true;
+        browser.driver.manage().window().maximize();
+        browser.driver.manage().window().setPosition(0, 0);        
         browser.manage().timeouts().implicitlyWait(5000);
    },
     onComplete: () => {

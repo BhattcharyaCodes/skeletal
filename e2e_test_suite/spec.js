@@ -12,29 +12,39 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const protractor_1 = require("protractor");
 //commenting out the expect package
 //import expect;
-var expect = require('expect'); // v1.15.1
+//var expect = require('expect'); // v1.15.1
 describe('homepage', () => {
     let search_text = 'gibberish';
     let url = 'https://www.google.com/';
-    let EC = protractor_1.protractor.ExpectedConditions;
-    //var browser_url = browser.get(url);
+    // let EC = protractor.ExpectedConditions;
+    // let browser_url: any;
     beforeAll(() => __awaiter(void 0, void 0, void 0, function* () {
         protractor_1.browser.waitForAngularEnabled(false);
+        debugger;
         yield protractor_1.browser.get(url);
+        //        await browser.get(url);
     }));
     it('should open the google search engine', () => __awaiter(void 0, void 0, void 0, function* () {
-        let wait_urlIs = yield protractor_1.browser.wait(EC.urlIs(url), 5000);
-        expect(protractor_1.browser.get(url)).toBe(wait_urlIs);
+        // let wait_urlIs =  await browser.wait(EC.urlIs(url), 10000);
+        // console.log(wait_urlIs);
+        // expect(url).toBe(wait_urlIs); 
+        expect(true).toBeTruthy();
+        // debugger;
+        expect(protractor_1.browser.getCurrentUrl()).toEqual('https://www.google.com/');
+        // expect(browser.wait(EC.urlIs(url), 10000)).toBeTruthy();
+    }));
+    it('should load the google image', () => __awaiter(void 0, void 0, void 0, function* () {
+        let google_img = protractor_1.element(protractor_1.by.id('hplogo'));
+        expect(google_img.isPresent()).toBeTruthy();
     }));
     // it('should search for the input text',async() => {
-    //     var search_box_locator = "input[class='gLFyf gsfi']";
+    //     var search_box_locator = "input.['gLFyf gsfi']";
     //     let search_box = await $(search_box_locator);
     //     search_box.sendKeys(search_text, protractor.Key.ENTER, protractor.Key.NULL);
-    //    // expect(search_text).toEqual(await search_box.getText());
     //     let res = await browser.wait(EC.textToBePresentInElement(search_box, search_text), 8000);
     //     expect(res).toBeTruthy();
     // });
     // xit('should be able to navigate to the first search result', async() => {
     // });
 });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3BlYy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInNwZWMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFBQSwyQ0FBNkY7QUFDN0YsbUNBQW1DO0FBQ25DLGdCQUFnQjtBQUNoQixJQUFJLE1BQU0sR0FBRyxPQUFPLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQyxVQUFVO0FBRTFDLFFBQVEsQ0FBQyxVQUFVLEVBQUUsR0FBRyxFQUFFO0lBQ3RCLElBQUksV0FBVyxHQUFHLFdBQVcsQ0FBQztJQUM5QixJQUFJLEdBQUcsR0FBRyx5QkFBeUIsQ0FBQztJQUNwQyxJQUFJLEVBQUUsR0FBRyx1QkFBVSxDQUFDLGtCQUFrQixDQUFDO0lBQ3ZDLHFDQUFxQztJQUVyQyxTQUFTLENBQUMsR0FBUSxFQUFFO1FBQ2hCLG9CQUFPLENBQUMscUJBQXFCLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDckMsTUFBTSxvQkFBTyxDQUFDLEdBQUcsQ0FBQyxHQUFHLENBQUMsQ0FBQztJQUMzQixDQUFDLENBQUEsQ0FBQyxDQUFDO0lBRUgsRUFBRSxDQUFDLHNDQUFzQyxFQUFFLEdBQVEsRUFBRTtRQUNqRCxJQUFJLFVBQVUsR0FBSSxNQUFNLG9CQUFPLENBQUMsSUFBSSxDQUFDLEVBQUUsQ0FBQyxLQUFLLENBQUMsR0FBRyxDQUFDLEVBQUUsSUFBSSxDQUFDLENBQUM7UUFDMUQsTUFBTSxDQUFDLG9CQUFPLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FBQyxDQUFDLENBQUMsSUFBSSxDQUFDLFVBQVUsQ0FBQyxDQUFDO0lBQzlDLENBQUMsQ0FBQSxDQUFDLENBQUM7SUFFSCxxREFBcUQ7SUFDckQsNERBQTREO0lBQzVELG9EQUFvRDtJQUNwRCxtRkFBbUY7SUFDbkYsaUVBQWlFO0lBQ2pFLGdHQUFnRztJQUNoRyxnQ0FBZ0M7SUFDaEMsTUFBTTtJQUVOLDRFQUE0RTtJQUU1RSxNQUFNO0FBRVYsQ0FBQyxDQUFDLENBQUMifQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3BlYy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInNwZWMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFBQSwyQ0FBNkY7QUFDN0YsbUNBQW1DO0FBQ25DLGdCQUFnQjtBQUNoQiw0Q0FBNEM7QUFFNUMsUUFBUSxDQUFDLFVBQVUsRUFBRSxHQUFHLEVBQUU7SUFFdEIsSUFBSSxXQUFXLEdBQUcsV0FBVyxDQUFDO0lBQzlCLElBQUksR0FBRyxHQUFHLHlCQUF5QixDQUFDO0lBQ3BDLDBDQUEwQztJQUMxQyx3QkFBd0I7SUFDeEIsU0FBUyxDQUFDLEdBQVEsRUFBRTtRQUNoQixvQkFBTyxDQUFDLHFCQUFxQixDQUFDLEtBQUssQ0FBQyxDQUFDO1FBQ3JDLFFBQVEsQ0FBQztRQUNULE1BQU0sb0JBQU8sQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUFDLENBQUM7UUFDL0IsaUNBQWlDO0lBQzdCLENBQUMsQ0FBQSxDQUFDLENBQUM7SUFFSCxFQUFFLENBQUMsc0NBQXNDLEVBQUUsR0FBUSxFQUFFO1FBQ2pELDhEQUE4RDtRQUM5RCwyQkFBMkI7UUFDNUIsaUNBQWlDO1FBQ2hDLE1BQU0sQ0FBQyxJQUFJLENBQUMsQ0FBQyxVQUFVLEVBQUUsQ0FBQztRQUMxQixZQUFZO1FBQ1osTUFBTSxDQUFDLG9CQUFPLENBQUMsYUFBYSxFQUFFLENBQUMsQ0FBQyxPQUFPLENBQUMseUJBQXlCLENBQUMsQ0FBQztRQUVwRSwyREFBMkQ7SUFDOUQsQ0FBQyxDQUFBLENBQUMsQ0FBQztJQUVILEVBQUUsQ0FBQyw4QkFBOEIsRUFBRSxHQUFRLEVBQUU7UUFDekMsSUFBSSxVQUFVLEdBQUcsb0JBQU8sQ0FBQyxlQUFFLENBQUMsRUFBRSxDQUFDLFFBQVEsQ0FBQyxDQUFDLENBQUM7UUFDMUMsTUFBTSxDQUFDLFVBQVUsQ0FBQyxTQUFTLEVBQUUsQ0FBQyxDQUFDLFVBQVUsRUFBRSxDQUFDO0lBQ2hELENBQUMsQ0FBQSxDQUFDLENBQUM7SUFFSCxxREFBcUQ7SUFDckQsdURBQXVEO0lBQ3ZELG9EQUFvRDtJQUNwRCxtRkFBbUY7SUFDbkYsZ0dBQWdHO0lBQ2hHLGdDQUFnQztJQUNoQyxNQUFNO0lBRU4sNEVBQTRFO0lBRTVFLE1BQU07QUFFVixDQUFDLENBQUMsQ0FBQyJ9

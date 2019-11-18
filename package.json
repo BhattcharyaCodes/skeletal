@@ -5,12 +5,12 @@
   "main": "protractor.conf.js",
   "scripts": {
     "debug": "node --inspect-brk ./node_modules/.bin/protractor protractor.conf.js",
-    "pretest": "npm run tsc && npm run webdriver-update",
-    "test": "./node_modules/.staging/protractor/bin/protractor protractor.conf.js",
+    "pretest": "npm run tsc",
+    "test": "./node_modules/protractor/bin/protractor protractor.conf.js",
     "tsc": "tsc",
-    "webdriver-update": "./node_modules/.staging/protractor/bin/webdriver-manager update --standalone --versions.standalone=3.8.0 --chrome --versions.chrome=76.0.3809.68",
-    "lighthouse": "./node_modules/.staging/jest/bin/jest.js --verbose -t=lighthouse",
-    "lighthouse-reports": "./node_modules/.staging/jest/bin/jest.js --verbose -t=lighthouse && node ./lighthouse/db.js"
+    "webdriver-update": "./node_modules/protractor/bin/webdriver-manager update",
+    "lighthouse": "./node_modules/jest/bin/jest.js --verbose -t=lighthouse",
+    "lighthouse-reports": "./node_modules/jest/bin/jest.js --verbose -t=lighthouse && node ./lighthouse/db.js"
   },
   "repository": {
     "type": "git",
