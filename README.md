@@ -3,6 +3,7 @@ a skeletal framework of how a test automation project should look like
 
 #Test cases for automation of google search engine using Protractor/Jasmine for wiritng e2e test scripts.
 1 Assert that the browser openend the correct url : "open the google search engine".
+
 2 Assert that the google logo image is loaded on the search page.
 
 3 If you enterd nothing and just clicked search the nothing should be occur.
