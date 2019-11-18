@@ -405,6 +405,40 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "screenShotFile": "images/00a500c6-0061-0078-0027-000b00fe0017.png",
         "timestamp": 1574098259692,
         "duration": 109
+    },
+    {
+        "description": "should open the google search engine|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 18930,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00e0004d-0027-0049-0077-00fb00270089.png",
+        "timestamp": 1574099674387,
+        "duration": 75
+    },
+    {
+        "description": "should load the google image|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 18930,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00120040-00f5-00e1-0022-00e000c40013.png",
+        "timestamp": 1574099676524,
+        "duration": 119
     }
 ];
 
