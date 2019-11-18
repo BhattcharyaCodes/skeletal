@@ -744,6 +744,57 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "screenShotFile": "images/00c000f1-0016-0031-00db-00d70082006d.png",
         "timestamp": 1574113655217,
         "duration": 2023
+    },
+    {
+        "description": "should open the google search engine|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 23629,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00090084-0021-0036-00ba-001500d5004f.png",
+        "timestamp": 1574115131882,
+        "duration": 17
+    },
+    {
+        "description": "should load the google logo image|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 23629,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00be001f-003d-0064-0099-00b6001d0010.png",
+        "timestamp": 1574115132733,
+        "duration": 84
+    },
+    {
+        "description": "should search for the input text|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 23629,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/0074007b-0094-00c3-0079-001100bd00a9.png",
+        "timestamp": 1574115133087,
+        "duration": 2669
     }
 ];
 

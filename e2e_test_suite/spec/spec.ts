@@ -1,4 +1,5 @@
 import { browser, element, by, By, $, $$, ExpectedConditions, protractor } from 'protractor';
+import { elementsLocated } from 'selenium-webdriver/lib/until';
 //commenting out the expect package
 //import expect;
 //var expect = require('expect'); // v1.15.1
@@ -25,6 +26,15 @@ describe('homepage', () => {
     it('should load the google logo image', async() => {
         let google_img = element(by.id('hplogo'));
         expect(google_img.isPresent()).toBeTruthy();
+    });
+    it('should contain the "Feeling lucky button"', async() => {
+        let feeling_lucky_button = $('input.RNmpXc[type=submit]').isPresent();
+        expect(feeling_lucky_button).toBeTruthy();
+    });
+    it('should contain the  "Google Search" button', async() => {
+        let google_search_button = elementsLocated('input.gNO89b[value="Google Search"]');
+        console.log(google_search_button);
+        expect(google_search_button).toBeTruthy();
     });
 
     it('should search for the input text', async() => {
@@ -55,12 +65,7 @@ describe('homepage', () => {
     // it('should contain the horizotnal navigation bar to group the search results', async() => {
 // let top_nav_bar = $(div#top_nav));
     // });
-    // it('should be able to navigate to the first search result', async() => {
-
-    // });
-    // it('should be able to navigate to the first search result', async() => {
-
-    // });
+    
     // it('should be able to navigate to the first search result', async() => {
 
     // });

@@ -12,7 +12,7 @@ export const config: Config = {
        },
    },
    framework: 'jasmine',
-   specs: ['./e2e_test_suite/spec.js'],
+   specs: ['./e2e_test_suite/spec/spec.js'],
 
     jasmineNodeOpts: {
         defaultTimeoutInterval: 90000
