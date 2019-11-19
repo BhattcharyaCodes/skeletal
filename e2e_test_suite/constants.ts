@@ -1,2 +1,5 @@
-let search_text = 'gibberish';
-let url = 'https://www.google.com/';
+export class Test_data_declarations{
+    search_text = 'gibberish';
+    url = 'https://www.google.com/';
+    google_img_style = 'padding-top: 109px;';
+}

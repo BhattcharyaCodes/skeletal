@@ -2860,6 +2860,406 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "screenShotFile": "images/005100ea-009c-0000-00f5-00ae000400c4.png",
         "timestamp": 1574144354810,
         "duration": 0
+    },
+    {
+        "description": "should open the google search engine & load the google logo image in ther center of the page|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 31286,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00bc00a7-0025-0037-004b-0058004b0036.png",
+        "timestamp": 1574144474152,
+        "duration": 57
+    },
+    {
+        "description": "should contain the \"Feeling lucky button\"|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 31286,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00bd0019-00ef-00cb-00b0-00e300620003.png",
+        "timestamp": 1574144474491,
+        "duration": 26
+    },
+    {
+        "description": "should contain the  \"Google Search\" button|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 31286,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00d5009c-0037-00bd-00fc-006a00200069.png",
+        "timestamp": 1574144474758,
+        "duration": 25
+    },
+    {
+        "description": "should search for the input text|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 31286,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00510005-00fe-00e8-00f5-00a800c400be.png",
+        "timestamp": 1574144475027,
+        "duration": 1923
+    },
+    {
+        "description": "should have Minimum lengths be set to 1 for the input boxes|homepage",
+        "passed": false,
+        "pending": true,
+        "os": "Mac OS X",
+        "instanceId": 31286,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Temporarily disabled with xit",
+        "browserLogs": [],
+        "screenShotFile": "images/009b001f-00fb-008c-000c-00f20005006b.png",
+        "timestamp": 1574144477212,
+        "duration": 0
+    },
+    {
+        "description": "should have a Maximum lengths of word char for the input boxes|homepage",
+        "passed": false,
+        "pending": true,
+        "os": "Mac OS X",
+        "instanceId": 31286,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Temporarily disabled with xit",
+        "browserLogs": [],
+        "screenShotFile": "images/00d600a6-000c-0017-008e-002b005b0062.png",
+        "timestamp": 1574144477230,
+        "duration": 0
+    },
+    {
+        "description": "should open the google search engine & load the google logo image in ther center of the page|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 31569,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/0075001e-0084-00bc-0012-002a00a3004d.png",
+        "timestamp": 1574145038554,
+        "duration": 103
+    },
+    {
+        "description": "should contain the \"Feeling lucky button\"|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 31569,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/003d00f1-00c1-00d5-00ae-0005006d0091.png",
+        "timestamp": 1574145039507,
+        "duration": 33
+    },
+    {
+        "description": "should contain the  \"Google Search\" button|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 31569,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/001f0058-006d-00dd-00ca-001a001d0046.png",
+        "timestamp": 1574145039813,
+        "duration": 25
+    },
+    {
+        "description": "should search for the input text|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 31569,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00bb0010-0053-0029-0047-00f200b300b7.png",
+        "timestamp": 1574145040090,
+        "duration": 4042
+    },
+    {
+        "description": "should have Minimum lengths be set to 1 for the input boxes|homepage",
+        "passed": false,
+        "pending": true,
+        "os": "Mac OS X",
+        "instanceId": 31569,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Temporarily disabled with xit",
+        "browserLogs": [],
+        "screenShotFile": "images/0032002d-005d-0047-00bb-0019006b0023.png",
+        "timestamp": 1574145044397,
+        "duration": 0
+    },
+    {
+        "description": "should have a Maximum lengths of word char for the input boxes|homepage",
+        "passed": false,
+        "pending": true,
+        "os": "Mac OS X",
+        "instanceId": 31569,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Temporarily disabled with xit",
+        "browserLogs": [],
+        "screenShotFile": "images/00f00098-00e5-00a7-00c3-005900a900dd.png",
+        "timestamp": 1574145044416,
+        "duration": 0
+    },
+    {
+        "description": "should open the google search engine & load the google logo image in ther center of the page|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 31888,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00a5009d-0029-00f1-002d-00ca0041009b.png",
+        "timestamp": 1574145437968,
+        "duration": 61
+    },
+    {
+        "description": "should contain the \"Feeling lucky button\"|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 31888,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00d900ed-00d7-0022-0054-00d100e800ed.png",
+        "timestamp": 1574145438331,
+        "duration": 25
+    },
+    {
+        "description": "should contain the  \"Google Search\" button|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 31888,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00460025-0028-00db-00a4-00fd00150080.png",
+        "timestamp": 1574145438614,
+        "duration": 27
+    },
+    {
+        "description": "should search for the input text|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 31888,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00c10084-005e-0041-003e-005d00c100e5.png",
+        "timestamp": 1574145438894,
+        "duration": 2062
+    },
+    {
+        "description": "should have Minimum lengths be set to 1 for the input boxes|homepage",
+        "passed": false,
+        "pending": true,
+        "os": "Mac OS X",
+        "instanceId": 31888,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Temporarily disabled with xit",
+        "browserLogs": [],
+        "screenShotFile": "images/00bd00d3-006e-0033-0002-00db00990087.png",
+        "timestamp": 1574145441224,
+        "duration": 0
+    },
+    {
+        "description": "should have a Maximum lengths of word char for the input boxes|homepage",
+        "passed": false,
+        "pending": true,
+        "os": "Mac OS X",
+        "instanceId": 31888,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Temporarily disabled with xit",
+        "browserLogs": [],
+        "screenShotFile": "images/00a000db-00d8-00c4-00ec-00d2008f0010.png",
+        "timestamp": 1574145441245,
+        "duration": 0
+    },
+    {
+        "description": "should open the google search engine & load the google logo image in ther center of the page|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 31982,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00030064-0061-00c6-0053-00c4009c00d6.png",
+        "timestamp": 1574145490475,
+        "duration": 73
+    },
+    {
+        "description": "should contain the \"Feeling lucky button\"|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 31982,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00a40045-00b2-000f-0086-00ed003f0074.png",
+        "timestamp": 1574145490882,
+        "duration": 40
+    },
+    {
+        "description": "should contain the  \"Google Search\" button|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 31982,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/0014009f-00ca-00cc-00b4-00ca000800f7.png",
+        "timestamp": 1574145491181,
+        "duration": 30
+    },
+    {
+        "description": "should search for the input text|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 31982,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00fb0041-00d4-0015-0017-00ed007f0003.png",
+        "timestamp": 1574145491470,
+        "duration": 2367
+    },
+    {
+        "description": "should have Minimum lengths be set to 1 for the input boxes|homepage",
+        "passed": false,
+        "pending": true,
+        "os": "Mac OS X",
+        "instanceId": 31982,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Temporarily disabled with xit",
+        "browserLogs": [],
+        "screenShotFile": "images/00f0004e-0073-006a-00d6-0037000b005e.png",
+        "timestamp": 1574145494103,
+        "duration": 0
+    },
+    {
+        "description": "should have a Maximum lengths of word char for the input boxes|homepage",
+        "passed": false,
+        "pending": true,
+        "os": "Mac OS X",
+        "instanceId": 31982,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Temporarily disabled with xit",
+        "browserLogs": [],
+        "screenShotFile": "images/00ca00de-00ba-00bd-0064-00f3002a007c.png",
+        "timestamp": 1574145494121,
+        "duration": 0
     }
 ];
 

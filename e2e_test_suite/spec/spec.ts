@@ -1,22 +1,23 @@
 import { browser, element, by, By, $, $$, ExpectedConditions, protractor } from 'protractor';
 import { elementsLocated } from 'selenium-webdriver/lib/until';
 import { Homepage_page_object } from '../page-objects/path.homepage.page';
+import {Test_data_declarations} from '../constants';
 
 describe('homepage', () => {
     let hmp = new Homepage_page_object();
-    let search_text = 'gibberish';
-    let url = 'https://www.google.com/';
+    let test_data = new Test_data_declarations();
     let EC = protractor.ExpectedConditions;
     beforeAll(async() => {
         //debugger;
-        await browser.get(url);
+        await browser.get(test_data.url);
     });
 
     it('should open the google search engine & load the google logo image in ther center of the page', async() => {
-       expect(await browser.getCurrentUrl()).toEqual(url);
+       expect(await browser.getCurrentUrl()).toEqual(test_data.url);
        expect(await hmp.google_img.isPresent()).toBeTruthy();
        //write assertion to check wether it is in the center of the page
-        expect(hmp.google_img.getAttribute('style')).toEqual('padding-top: 109px;');
+        //expect(hmp.google_img.getAttribute('style')).toEqual('padding-top: 109px;');
+        expect(hmp.google_img.getAttribute('style')).toEqual(test_data.google_img_style);
        
     });
 
@@ -29,7 +30,7 @@ describe('homepage', () => {
     });
 
     it('should search for the input text', async() => {
-        await hmp.input_box.sendKeys(search_text,protractor.Key.ENTER,protractor.Key.NULL);
+        await hmp.input_box.sendKeys(test_data.search_text,protractor.Key.ENTER,protractor.Key.NULL);
         expect(await hmp.result_string.isPresent()).toBeTruthy();
     });
 
