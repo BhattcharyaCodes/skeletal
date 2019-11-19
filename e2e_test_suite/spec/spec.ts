@@ -16,7 +16,7 @@ describe('homepage', () => {
        expect(await browser.getCurrentUrl()).toEqual(url);
        expect(await hmp.google_img.isPresent()).toBeTruthy();
        //write assertion to check wether it is in the center of the page
-        expect(hmp.google_img.getAttribute('style')).toEqual('padding-top:109px;');
+        expect(hmp.google_img.getAttribute('style')).toEqual('padding-top: 109px;');
        
     });
 
