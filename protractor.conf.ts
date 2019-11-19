@@ -8,7 +8,7 @@ export const config: Config = {
    capabilities: {
        'browserName': 'chrome',
         chromeOptions: {
-            // args: [ "--headless", "--disable-gpu" ]
+             args: [ "--headless", "--disable-gpu" ]
        },
    },
    framework: 'jasmine',

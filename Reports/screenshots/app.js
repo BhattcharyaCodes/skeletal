@@ -7709,6 +7709,912 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "screenShotFile": "images/005e000c-0066-0044-0038-0066009100e4.png",
         "timestamp": 1574188619489,
         "duration": 1388
+    },
+    {
+        "description": "should open the google search engine & load the google logo image in ther center of the page|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 42476,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00bc0037-003f-0063-003a-009000c200a1.png",
+        "timestamp": 1574189559645,
+        "duration": 92
+    },
+    {
+        "description": "should contain the  \"Google Search\" button|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 42476,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/0060001c-008d-0050-00eb-001600780080.png",
+        "timestamp": 1574189562317,
+        "duration": 33
+    },
+    {
+        "description": "should contain the \"Feeling lucky button\" and clicking it takes you to doodle url|homepage",
+        "passed": false,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 42476,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": [
+            "Failed: element not interactable\n  (Session info: chrome=78.0.3904.97)\n  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Mac OS X 10.14.6 x86_64)"
+        ],
+        "trace": [
+            "ElementNotVisibleError: element not interactable\n  (Session info: chrome=78.0.3904.97)\n  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\nFrom: Task: WebElement.click()\n    at Driver.schedule (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/webdriver.js:807:17)\n    at WebElement.schedule_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/webdriver.js:2010:25)\n    at WebElement.click (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/webdriver.js:2092:17)\n    at actionFn (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:89:44)\n    at Array.map (<anonymous>)\n    at /Users/animesh/play/skeletal/node_modules/protractor/built/element.js:461:65\n    at ManagedPromise.invokeCallback_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:1376:14)\n    at TaskQueue.execute_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:2927:27Error\n    at ElementArrayFinder.applyAction_ (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:459:27)\n    at ElementArrayFinder.<computed> [as click] (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:91:29)\n    at ElementFinder.<computed> [as click] (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:831:22)\n    at /Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.ts:28:40\n    at Generator.next (<anonymous>)\n    at /Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.js:4:12)\n    at UserContext.<anonymous> (/Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.ts:26:103)\n    at /Users/animesh/play/skeletal/node_modules/jasminewd2/index.js:112:25\nFrom: Task: Run it(\"should contain the \"Feeling lucky button\" and clicking it takes you to doodle url\") in control flow\n    at UserContext.<anonymous> (/Users/animesh/play/skeletal/node_modules/jasminewd2/index.js:94:19)\n    at attempt (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at runNext (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)\n    at /Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13\n    at /Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9\n    at /Users/animesh/play/skeletal/node_modules/jasminewd2/index.js:64:48\n    at ControlFlow.emit (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/events.js:62:21)\n    at ControlFlow.shutdown_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:2674:10)\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:2599:53\nFrom asynchronous test: \nError\n    at Suite.<anonymous> (/Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.ts:26:5)\n    at addSpecsToSuite (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)\n    at Env.describe (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)\n    at describe (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)\n    at Object.<anonymous> (/Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.ts:6:1)\n    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)\n    at Module.load (internal/modules/cjs/loader.js:914:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:822:14)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "images/0045006c-00da-0040-0039-004d00ee00c8.png",
+        "timestamp": 1574189562683,
+        "duration": 5530
+    },
+    {
+        "description": "should should not search anything if input belongs to '',!, @, $,# or is blank|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 42476,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00100077-0051-0090-00b7-003d000500b1.png",
+        "timestamp": 1574189568511,
+        "duration": 1710
+    },
+    {
+        "description": "should not crash the Application, if user inserted % in search field|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 42476,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00eb00c1-0092-0038-00c3-002200700014.png",
+        "timestamp": 1574189570673,
+        "duration": 1651
+    },
+    {
+        "description": "should have a Maximum lengths of word char for the input boxes|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 42476,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00710086-000b-00b1-0022-00c1001600af.png",
+        "timestamp": 1574189572671,
+        "duration": 17
+    },
+    {
+        "description": "should search for the input text|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 42476,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/0084007f-000e-0049-00c9-004700610014.png",
+        "timestamp": 1574189573000,
+        "duration": 2111
+    },
+    {
+        "description": "should be able to navigate to the first search result|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 42476,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "images/005500a5-0063-0081-008b-00e600d8006d.png",
+        "timestamp": 1574189575442,
+        "duration": 1
+    },
+    {
+        "description": "should be able to navigate to the first search result|homepage",
+        "passed": false,
+        "pending": true,
+        "os": "Mac OS X",
+        "instanceId": 42476,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Temporarily disabled with xit",
+        "browserLogs": [],
+        "screenShotFile": "images/00d70060-0053-00be-00d4-003e00ac006c.png",
+        "timestamp": 1574189575773,
+        "duration": 0
+    },
+    {
+        "description": "should open the google search engine & load the google logo image in ther center of the page|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 42628,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00140030-00ac-0084-0010-00f5001600c5.png",
+        "timestamp": 1574189652748,
+        "duration": 196
+    },
+    {
+        "description": "should contain the  \"Google Search\" button|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 42628,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00cb002c-006a-00f3-0065-00730029007c.png",
+        "timestamp": 1574189654550,
+        "duration": 32
+    },
+    {
+        "description": "should contain the \"Feeling lucky button\" and clicking it takes you to doodle url|homepage",
+        "passed": false,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 42628,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": [
+            "Failed: element not interactable\n  (Session info: chrome=78.0.3904.97)\n  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Mac OS X 10.14.6 x86_64)"
+        ],
+        "trace": [
+            "ElementNotVisibleError: element not interactable\n  (Session info: chrome=78.0.3904.97)\n  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\nFrom: Task: WebElement.click()\n    at Driver.schedule (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/webdriver.js:807:17)\n    at WebElement.schedule_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/webdriver.js:2010:25)\n    at WebElement.click (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/webdriver.js:2092:17)\n    at actionFn (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:89:44)\n    at Array.map (<anonymous>)\n    at /Users/animesh/play/skeletal/node_modules/protractor/built/element.js:461:65\n    at ManagedPromise.invokeCallback_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:1376:14)\n    at TaskQueue.execute_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:2927:27Error\n    at ElementArrayFinder.applyAction_ (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:459:27)\n    at ElementArrayFinder.<computed> [as click] (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:91:29)\n    at ElementFinder.<computed> [as click] (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:831:22)\n    at /Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.ts:28:40\n    at Generator.next (<anonymous>)\n    at /Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.js:4:12)\n    at UserContext.<anonymous> (/Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.ts:26:103)\n    at /Users/animesh/play/skeletal/node_modules/jasminewd2/index.js:112:25\nFrom: Task: Run it(\"should contain the \"Feeling lucky button\" and clicking it takes you to doodle url\") in control flow\n    at UserContext.<anonymous> (/Users/animesh/play/skeletal/node_modules/jasminewd2/index.js:94:19)\n    at attempt (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at runNext (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)\n    at /Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13\n    at /Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9\n    at /Users/animesh/play/skeletal/node_modules/jasminewd2/index.js:64:48\n    at ControlFlow.emit (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/events.js:62:21)\n    at ControlFlow.shutdown_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:2674:10)\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:2599:53\nFrom asynchronous test: \nError\n    at Suite.<anonymous> (/Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.ts:26:5)\n    at addSpecsToSuite (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)\n    at Env.describe (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)\n    at describe (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)\n    at Object.<anonymous> (/Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.ts:6:1)\n    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)\n    at Module.load (internal/modules/cjs/loader.js:914:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:822:14)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "images/001f00aa-0006-004c-00db-00a300a100df.png",
+        "timestamp": 1574189654870,
+        "duration": 5515
+    },
+    {
+        "description": "should should not search anything if input belongs to '',!, @, $,# or is blank|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 42628,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00630008-0027-0044-00d9-004300f800b9.png",
+        "timestamp": 1574189660821,
+        "duration": 1722
+    },
+    {
+        "description": "should not crash the Application, if user inserted % in search field|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 42628,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/002500b9-00af-00c9-00f3-00c4000900b7.png",
+        "timestamp": 1574189662869,
+        "duration": 1075
+    },
+    {
+        "description": "should have a Maximum lengths of word char for the input boxes|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 42628,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/008300f0-0099-0036-003a-00bb009300bd.png",
+        "timestamp": 1574189664337,
+        "duration": 127
+    },
+    {
+        "description": "should search for the input text|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 42628,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00d90083-0082-0027-0071-000d00380039.png",
+        "timestamp": 1574189664805,
+        "duration": 1273
+    },
+    {
+        "description": "should be able to navigate to the first search result|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 42628,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "images/0065000b-0037-0042-009a-009300230061.png",
+        "timestamp": 1574189666505,
+        "duration": 1
+    },
+    {
+        "description": "should be able to navigate to the first search result|homepage",
+        "passed": false,
+        "pending": true,
+        "os": "Mac OS X",
+        "instanceId": 42628,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Temporarily disabled with xit",
+        "browserLogs": [],
+        "screenShotFile": "images/000a00d9-006b-0091-0010-000e005e00f4.png",
+        "timestamp": 1574189666828,
+        "duration": 0
+    },
+    {
+        "description": "should open the google search engine & load the google logo image in ther center of the page|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43104,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/007a0037-0032-0074-00d6-00e400d30062.png",
+        "timestamp": 1574191342040,
+        "duration": 82
+    },
+    {
+        "description": "should contain the  \"Google Search\" button|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43104,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00a3006f-0059-00fe-00ef-00da002a0056.png",
+        "timestamp": 1574191343216,
+        "duration": 27
+    },
+    {
+        "description": "should contain the \"Feeling lucky button\" and clicking it takes you to doodle url|homepage",
+        "passed": false,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43104,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": [
+            "Failed: element not interactable\n  (Session info: chrome=78.0.3904.97)\n  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Mac OS X 10.14.6 x86_64)"
+        ],
+        "trace": [
+            "ElementNotVisibleError: element not interactable\n  (Session info: chrome=78.0.3904.97)\n  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\nFrom: Task: WebElement.click()\n    at Driver.schedule (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/webdriver.js:807:17)\n    at WebElement.schedule_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/webdriver.js:2010:25)\n    at WebElement.click (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/webdriver.js:2092:17)\n    at actionFn (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:89:44)\n    at Array.map (<anonymous>)\n    at /Users/animesh/play/skeletal/node_modules/protractor/built/element.js:461:65\n    at ManagedPromise.invokeCallback_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:1376:14)\n    at TaskQueue.execute_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:2927:27Error\n    at ElementArrayFinder.applyAction_ (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:459:27)\n    at ElementArrayFinder.<computed> [as click] (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:91:29)\n    at ElementFinder.<computed> [as click] (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:831:22)\n    at /Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.ts:28:40\n    at Generator.next (<anonymous>)\n    at /Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.js:4:12)\n    at UserContext.<anonymous> (/Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.ts:26:103)\n    at /Users/animesh/play/skeletal/node_modules/jasminewd2/index.js:112:25\nFrom: Task: Run it(\"should contain the \"Feeling lucky button\" and clicking it takes you to doodle url\") in control flow\n    at UserContext.<anonymous> (/Users/animesh/play/skeletal/node_modules/jasminewd2/index.js:94:19)\n    at attempt (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at runNext (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)\n    at /Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13\n    at /Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9\n    at /Users/animesh/play/skeletal/node_modules/jasminewd2/index.js:64:48\n    at ControlFlow.emit (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/events.js:62:21)\n    at ControlFlow.shutdown_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:2674:10)\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:2599:53\nFrom asynchronous test: \nError\n    at Suite.<anonymous> (/Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.ts:26:5)\n    at addSpecsToSuite (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)\n    at Env.describe (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)\n    at describe (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)\n    at Object.<anonymous> (/Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.ts:6:1)\n    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)\n    at Module.load (internal/modules/cjs/loader.js:914:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:822:14)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "images/00a300f1-0091-00f3-0035-001c00af00b8.png",
+        "timestamp": 1574191343544,
+        "duration": 5111
+    },
+    {
+        "description": "should should not search anything if input belongs to '',!, @, $,# or is blank|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43104,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00b60065-0021-0014-0049-00e000140066.png",
+        "timestamp": 1574191348958,
+        "duration": 2448
+    },
+    {
+        "description": "should not crash the Application, if user inserted % in search field|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43104,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00400019-002f-0093-002e-00a800b30094.png",
+        "timestamp": 1574191351824,
+        "duration": 3037
+    },
+    {
+        "description": "should have a Maximum lengths of word char for the input boxes|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43104,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00f100ce-009f-0095-0097-0005002a0076.png",
+        "timestamp": 1574191355206,
+        "duration": 55
+    },
+    {
+        "description": "should search for the input text|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43104,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00e70097-005b-008a-00cf-00f000db0046.png",
+        "timestamp": 1574191355637,
+        "duration": 2967
+    },
+    {
+        "description": "should be able to navigate to the first search result|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43104,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "images/00820082-004c-00f1-00d4-00c90087006b.png",
+        "timestamp": 1574191358975,
+        "duration": 1
+    },
+    {
+        "description": "should be able to navigate to the first search result|homepage",
+        "passed": false,
+        "pending": true,
+        "os": "Mac OS X",
+        "instanceId": 43104,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Temporarily disabled with xit",
+        "browserLogs": [],
+        "screenShotFile": "images/009c00e2-00cf-00e8-0093-00c1006e003b.png",
+        "timestamp": 1574191359314,
+        "duration": 0
+    },
+    {
+        "description": "should open the google search engine & load the google logo image in ther center of the page|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43599,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/002900c9-00e5-00cb-005c-00e400e600a0.png",
+        "timestamp": 1574192925849,
+        "duration": 347
+    },
+    {
+        "description": "should contain the  \"Google Search\" button|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43599,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00360086-006e-00ae-0052-00b40042009a.png",
+        "timestamp": 1574192932717,
+        "duration": 30
+    },
+    {
+        "description": "should contain the \"Feeling lucky button\" and clicking it takes you to doodle url|homepage",
+        "passed": false,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43599,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": [
+            "Failed: element not interactable\n  (Session info: chrome=78.0.3904.97)\n  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Mac OS X 10.14.6 x86_64)"
+        ],
+        "trace": [
+            "ElementNotVisibleError: element not interactable\n  (Session info: chrome=78.0.3904.97)\n  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\nFrom: Task: WebElement.click()\n    at Driver.schedule (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/webdriver.js:807:17)\n    at WebElement.schedule_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/webdriver.js:2010:25)\n    at WebElement.click (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/webdriver.js:2092:17)\n    at actionFn (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:89:44)\n    at Array.map (<anonymous>)\n    at /Users/animesh/play/skeletal/node_modules/protractor/built/element.js:461:65\n    at ManagedPromise.invokeCallback_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:1376:14)\n    at TaskQueue.execute_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:2927:27Error\n    at ElementArrayFinder.applyAction_ (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:459:27)\n    at ElementArrayFinder.<computed> [as click] (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:91:29)\n    at ElementFinder.<computed> [as click] (/Users/animesh/play/skeletal/node_modules/protractor/built/element.js:831:22)\n    at /Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.ts:28:39\n    at Generator.next (<anonymous>)\n    at /Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.js:4:12)\n    at UserContext.<anonymous> (/Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.ts:26:103)\n    at /Users/animesh/play/skeletal/node_modules/jasminewd2/index.js:112:25\nFrom: Task: Run it(\"should contain the \"Feeling lucky button\" and clicking it takes you to doodle url\") in control flow\n    at UserContext.<anonymous> (/Users/animesh/play/skeletal/node_modules/jasminewd2/index.js:94:19)\n    at attempt (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at runNext (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)\n    at /Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13\n    at /Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9\n    at /Users/animesh/play/skeletal/node_modules/jasminewd2/index.js:64:48\n    at ControlFlow.emit (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/events.js:62:21)\n    at ControlFlow.shutdown_ (/Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:2674:10)\n    at /Users/animesh/play/skeletal/node_modules/selenium-webdriver/lib/promise.js:2599:53\nFrom asynchronous test: \nError\n    at Suite.<anonymous> (/Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.ts:26:5)\n    at addSpecsToSuite (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)\n    at Env.describe (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)\n    at describe (/Users/animesh/play/skeletal/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)\n    at Object.<anonymous> (/Users/animesh/play/skeletal/e2e_test_suite/spec/google.search.homepage.spec.ts:6:1)\n    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)\n    at Module.load (internal/modules/cjs/loader.js:914:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:822:14)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "images/005d00a2-00db-00b7-0056-000c00af0093.png",
+        "timestamp": 1574192933298,
+        "duration": 5392
+    },
+    {
+        "description": "should should not search anything if input belongs to '',!, @, $,# or is blank|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43599,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/007100b4-00fa-00fc-008e-00fc008b0016.png",
+        "timestamp": 1574192938975,
+        "duration": 1700
+    },
+    {
+        "description": "should not crash the Application, if user inserted % in search field|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43599,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/004700f2-00a7-00da-00a1-006e004500bf.png",
+        "timestamp": 1574192941015,
+        "duration": 1102
+    },
+    {
+        "description": "should have a Maximum lengths of word char for the input boxes|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43599,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/001400f7-0079-0046-00e3-001900d10086.png",
+        "timestamp": 1574192942649,
+        "duration": 26
+    },
+    {
+        "description": "should search for the input text|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43599,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00c3007c-0097-00b3-0036-004b00cd00c1.png",
+        "timestamp": 1574192943011,
+        "duration": 1296
+    },
+    {
+        "description": "should be able to navigate to the first search result|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43599,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "images/006200cc-0046-0003-002e-00fc009000d2.png",
+        "timestamp": 1574192944734,
+        "duration": 1
+    },
+    {
+        "description": "should be able to navigate to the first search result|homepage",
+        "passed": false,
+        "pending": true,
+        "os": "Mac OS X",
+        "instanceId": 43599,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Temporarily disabled with xit",
+        "browserLogs": [],
+        "screenShotFile": "images/00e8006b-006c-00dc-0087-005800f300d5.png",
+        "timestamp": 1574192945172,
+        "duration": 1
+    },
+    {
+        "description": "should open the google search engine & load the google logo image in ther center of the page|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43722,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00d000a4-0027-0078-00f1-008000ad00ed.png",
+        "timestamp": 1574193056843,
+        "duration": 170
+    },
+    {
+        "description": "should contain the  \"Google Search\" button|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43722,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/004f009c-0050-00df-00b3-00b900a10084.png",
+        "timestamp": 1574193058922,
+        "duration": 87
+    },
+    {
+        "description": "should contain the \"Feeling lucky button\" and clicking it takes you to doodle url|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43722,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/0093007e-00bf-002a-0039-009300f500f5.png",
+        "timestamp": 1574193059524,
+        "duration": 47
+    },
+    {
+        "description": "should should not search anything if input belongs to '',!, @, $,# or is blank|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43722,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/009e0096-00c9-003b-008e-003f00cb0088.png",
+        "timestamp": 1574193060088,
+        "duration": 1717
+    },
+    {
+        "description": "should not crash the Application, if user inserted % in search field|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43722,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00d20059-00e7-0012-001e-00d400120088.png",
+        "timestamp": 1574193064134,
+        "duration": 1698
+    },
+    {
+        "description": "should have a Maximum lengths of word char for the input boxes|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43722,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00450041-000a-0095-008b-003300c30038.png",
+        "timestamp": 1574193066174,
+        "duration": 125
+    },
+    {
+        "description": "should search for the input text|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43722,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00c300f9-0077-00ec-0056-0009000f000e.png",
+        "timestamp": 1574193066611,
+        "duration": 2025
+    },
+    {
+        "description": "should be able to navigate to the first search result|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43722,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "images/0036005a-00b3-00e8-0019-004f00e80013.png",
+        "timestamp": 1574193069003,
+        "duration": 1
+    },
+    {
+        "description": "should be able to navigate to the first search result|homepage",
+        "passed": false,
+        "pending": true,
+        "os": "Mac OS X",
+        "instanceId": 43722,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Temporarily disabled with xit",
+        "browserLogs": [],
+        "screenShotFile": "images/0061005e-00bb-00df-00d0-001500c4008d.png",
+        "timestamp": 1574193069318,
+        "duration": 0
+    },
+    {
+        "description": "should open the google search engine & load the google logo image in ther center of the page|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43827,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/008e00d1-008e-0007-008e-0019007500be.png",
+        "timestamp": 1574193143357,
+        "duration": 2123
+    },
+    {
+        "description": "should contain the  \"Google Search\" button|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43827,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00da006e-00c8-00ae-0034-006c002f002e.png",
+        "timestamp": 1574193146038,
+        "duration": 814
+    },
+    {
+        "description": "should contain the \"Feeling lucky button\" and clicking it takes you to doodle url|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43827,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00c4002a-00c1-0054-00d0-003d00fd0000.png",
+        "timestamp": 1574193147166,
+        "duration": 808
+    },
+    {
+        "description": "should should not search anything if input belongs to '',!, @, $,# or is blank|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43827,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/009b00d2-0017-006b-00cc-0040006d00a9.png",
+        "timestamp": 1574193148294,
+        "duration": 1995
+    },
+    {
+        "description": "should not crash the Application, if user inserted % in search field|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43827,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00d6006f-001b-0041-00af-0050006900fb.png",
+        "timestamp": 1574193150624,
+        "duration": 2950
+    },
+    {
+        "description": "should have a Maximum lengths of word char for the input boxes|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43827,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/003600d2-00f0-00fd-00dd-00240029005c.png",
+        "timestamp": 1574193153954,
+        "duration": 787
+    },
+    {
+        "description": "should search for the input text|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43827,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00230065-0064-0036-00ea-00f600cf0090.png",
+        "timestamp": 1574193155068,
+        "duration": 2286
+    },
+    {
+        "description": "should be able to navigate to the first search result|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 43827,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "images/00ae007e-0088-002b-0080-007200b6008d.png",
+        "timestamp": 1574193157700,
+        "duration": 462
     }
 ];
 
