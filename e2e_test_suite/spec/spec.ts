@@ -1,46 +1,38 @@
 import { browser, element, by, By, $, $$, ExpectedConditions, protractor } from 'protractor';
 import { elementsLocated } from 'selenium-webdriver/lib/until';
-//commenting out the expect package
-//import expect;
-//var expect = require('expect'); // v1.15.1
+import { Homepage_page_object } from '../page-objects/path.homepage.page';
 
 describe('homepage', () => {
-    
+    let hmp = new Homepage_page_object();
     let search_text = 'gibberish';
     let url = 'https://www.google.com/';
     let EC = protractor.ExpectedConditions;
-    // let browser_url: any;
     beforeAll(async() => {
-        browser.waitForAngularEnabled(false);
-        debugger;
+        //debugger;
         await browser.get(url);
     });
 
     it('should open the google search engine', async() => {
         // let wait_urlIs =  await browser.wait(EC.urlIs(url), 10000);
-       // expect(url).toBe(wait_urlIs); 
         // debugger;
-        expect(browser.getCurrentUrl()).toEqual(url);
+        expect(await browser.getCurrentUrl()).toEqual(url);
     });
 
     it('should load the google logo image', async() => {
-        let google_img = element(by.id('hplogo'));
-        expect(google_img.isPresent()).toBeTruthy();
+        expect(await hmp.google_img.isPresent()).toBeTruthy();
     });
+
     it('should contain the "Feeling lucky button"', async() => {
-        let feeling_lucky_button = $('input.RNmpXc[type=submit]').isPresent();
-        expect(feeling_lucky_button).toBeTruthy();
+        expect( hmp.feeling_lucky_button.isPresent()).toBeTruthy();
     });
+
     it('should contain the  "Google Search" button', async() => {
-        let google_search_button = elementsLocated('input.gNO89b[value="Google Search"]');
-        console.log(google_search_button);
-        expect(google_search_button).toBeTruthy();
+        expect(await hmp.google_search_button.isPresent()).toBeTruthy();
     });
 
     it('should search for the input text', async() => {
-        await $('input.gLFyf').sendKeys(search_text, protractor.Key.ENTER, protractor.Key.NULL);
-        let result_string = element(by.id('resultStats')).isPresent();
-        expect(result_string).toBeTruthy();
+        await hmp.input_box.sendKeys(search_text,protractor.Key.ENTER,protractor.Key.NULL);
+        expect(await hmp.result_string.isPresent()).toBeTruthy();
     });
 
     // it('should should not search anything if input belongs to {'',!, @, $,#}', async() => {
@@ -55,9 +47,7 @@ describe('homepage', () => {
 
     // });
     // it('should have a Maximum lengths of word char for the input boxes', async() => {
-        let locator_aria_label: string = 'gLFyf gsfi';
-        let maximum_len:string = '2048'; //maxlength attribute name for input
-        
+     
     // });
     // it('should be able to navigate to the first search result', async() => {
 

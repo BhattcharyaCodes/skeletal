@@ -1,0 +1,3 @@
+let search_text = 'gibberish';
+let url = 'https://www.google.com/';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uc3RhbnRzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiY29uc3RhbnRzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLElBQUksV0FBVyxHQUFHLFdBQVcsQ0FBQztBQUM5QixJQUFJLEdBQUcsR0FBRyx5QkFBeUIsQ0FBQyJ9

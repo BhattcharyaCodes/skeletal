@@ -17,7 +17,7 @@ export const config: Config = {
     jasmineNodeOpts: {
         defaultTimeoutInterval: 90000
     },
-    onPrepare: () => {
+    onPrepare: async() => {
         jasmine.getEnv().addReporter(new HtmlReporter({
             baseDirectory: 'Reports/screenshots',
             screenshotsSubfolder: 'images'
@@ -25,10 +25,11 @@ export const config: Config = {
         let globals = require('protractor');
         let browser: ProtractorBrowser = globals.browser;
    //let browser = globals.browser;
+        await browser.waitForAngularEnabled(false);
         // browser.ignoreSynchronization = true;
-        browser.driver.manage().window().maximize();
-        browser.driver.manage().window().setPosition(0, 0);        
-        browser.manage().timeouts().implicitlyWait(5000);
+        await browser.driver.manage().window().maximize();
+        await browser.driver.manage().window().setPosition(0, 0);        
+        await browser.manage().timeouts().implicitlyWait(5000);
    },
     onComplete: () => {
         browser.close();
