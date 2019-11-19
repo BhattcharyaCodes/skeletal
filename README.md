@@ -14,6 +14,7 @@ a skeletal framework of how a test automation project should look like
 5 Assert that the Minimum and Maximum lengths should be set for the text input boxes.
 
 6 If you entered Special Characters like !,@,#,$ etc it should not search anything.
+..............
 
 7 Assert that the search for the input loads image result which can be clicked.
 

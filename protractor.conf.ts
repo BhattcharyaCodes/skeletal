@@ -8,11 +8,11 @@ export const config: Config = {
    capabilities: {
        'browserName': 'chrome',
         chromeOptions: {
-            args: [ "--headless", "--disable-gpu" ]
+            // args: [ "--headless", "--disable-gpu" ]
        },
    },
    framework: 'jasmine',
-   specs: ['./e2e_test_suite/spec/spec.js'],
+   specs: ['./e2e_test_suite/spec/google.search.homepage.spec.js'],
 
     jasmineNodeOpts: {
         defaultTimeoutInterval: 90000
