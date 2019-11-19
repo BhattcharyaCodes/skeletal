@@ -2652,6 +2652,110 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "screenShotFile": "images/0073002e-0062-001f-0073-009300ff006e.png",
         "timestamp": 1574143154007,
         "duration": 2250
+    },
+    {
+        "description": "should open the google search engine & load the google logo image in ther center of the page|homepage",
+        "passed": false,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 30810,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": [
+            "Expected 'padding-top: 109px;' to equal 'padding-top:109px'."
+        ],
+        "trace": [
+            "Error: Failed expectation\n    at /Users/animesh/play/skeletal/e2e_test_suite/spec/spec.ts:19:54\n    at Generator.next (<anonymous>)\n    at fulfilled (/Users/animesh/play/skeletal/e2e_test_suite/spec/spec.js:5:58)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "images/0007009b-0070-00eb-007d-002c00f90034.png",
+        "timestamp": 1574144222374,
+        "duration": 72
+    },
+    {
+        "description": "should contain the \"Feeling lucky button\"|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 30810,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/009000f1-0009-0017-0036-002800a300eb.png",
+        "timestamp": 1574144223029,
+        "duration": 31
+    },
+    {
+        "description": "should contain the  \"Google Search\" button|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 30810,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/0043000e-001a-0065-00a0-00910017000e.png",
+        "timestamp": 1574144223612,
+        "duration": 25
+    },
+    {
+        "description": "should search for the input text|homepage",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 30810,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00ae0014-009b-0091-007f-001e00ed0076.png",
+        "timestamp": 1574144223898,
+        "duration": 2127
+    },
+    {
+        "description": "should have Minimum lengths be set to 1 for the input boxes|homepage",
+        "passed": false,
+        "pending": true,
+        "os": "Mac OS X",
+        "instanceId": 30810,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Temporarily disabled with xit",
+        "browserLogs": [],
+        "screenShotFile": "images/00e5000b-0064-0054-00dc-005700c700d3.png",
+        "timestamp": 1574144226295,
+        "duration": 0
+    },
+    {
+        "description": "should have a Maximum lengths of word char for the input boxes|homepage",
+        "passed": false,
+        "pending": true,
+        "os": "Mac OS X",
+        "instanceId": 30810,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Temporarily disabled with xit",
+        "browserLogs": [],
+        "screenShotFile": "images/00c2003d-003f-007e-0046-00d200a3007e.png",
+        "timestamp": 1574144226314,
+        "duration": 1
     }
 ];
 

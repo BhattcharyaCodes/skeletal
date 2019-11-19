@@ -12,14 +12,12 @@ describe('homepage', () => {
         await browser.get(url);
     });
 
-    it('should open the google search engine', async() => {
-        // let wait_urlIs =  await browser.wait(EC.urlIs(url), 10000);
-        // debugger;
-        expect(await browser.getCurrentUrl()).toEqual(url);
-    });
-
-    it('should load the google logo image', async() => {
-        expect(await hmp.google_img.isPresent()).toBeTruthy();
+    it('should open the google search engine & load the google logo image in ther center of the page', async() => {
+       expect(await browser.getCurrentUrl()).toEqual(url);
+       expect(await hmp.google_img.isPresent()).toBeTruthy();
+       //write assertion to check wether it is in the center of the page
+        expect(hmp.google_img.getAttribute('style')).toEqual('padding-top:109px;');
+       
     });
 
     it('should contain the "Feeling lucky button"', async() => {
@@ -35,20 +33,19 @@ describe('homepage', () => {
         expect(await hmp.result_string.isPresent()).toBeTruthy();
     });
 
-    // it('should should not search anything if input belongs to {'',!, @, $,#}', async() => {
-      //  let expected_string: string = "Your search - !,@,#,$ - did not match any documents.";
+    // it('should should not search anything if input belongs to {'',!, @, $,#} or is blank', async() => {
+    //    let expected_string: string = "Your search - !,@,#,$ - did not match any documents.";
 
     // });
 
-    // it('should be able to navigate to the first search result', async() => {
+    xit('should have Minimum lengths be set to 1 for the input boxes', async() => {
 
-    // });
-    // it('should have Minimum lengths be set to 1 for the input boxes', async() => {
-
-    // });
-    // it('should have a Maximum lengths of word char for the input boxes', async() => {
+    });
+    xit('should have a Maximum lengths of word char for the input boxes', async() => {
      
-    // });
+    });
+    //search list page
+    
     // it('should be able to navigate to the first search result', async() => {
 
     // });
