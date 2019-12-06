@@ -8,13 +8,15 @@ export const config: Config = {
    capabilities: {
        'browserName': 'chrome',
         chromeOptions: {
-             //args: [ "--headless", "--disable-gpu" ]
+             args: [ "--headless", "--disable-gpu" ]
        },
    },
    framework: 'jasmine',
    specs: [
        //'./e2e_test_suite/spec/google.search.homepage.spec.js'
-        './e2e_test_suite/spec/maps.spec.js'
+        // './e2e_test_suite/spec/maps.spec.js'
+        // './e2e_test_suite/spec/spotify.read.get.api.spec.ts'
+        './e2e_test_suite/spec/request.promise.spec.ts'
     ],
 
     jasmineNodeOpts: {
