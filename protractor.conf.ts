@@ -8,14 +8,17 @@ export const config: Config = {
    capabilities: {
        'browserName': 'chrome',
         chromeOptions: {
-             args: [ "--headless", "--disable-gpu" ]
+             //args: [ "--headless", "--disable-gpu" ]
        },
    },
    framework: 'jasmine',
-   specs: ['./e2e_test_suite/spec/google.search.homepage.spec.js'],
+   specs: [
+       //'./e2e_test_suite/spec/google.search.homepage.spec.js'
+        './e2e_test_suite/spec/maps.spec.js'
+    ],
 
     jasmineNodeOpts: {
-        defaultTimeoutInterval: 90000
+        defaultTimeoutInterval: 120000
     },
     onPrepare: async() => {
         jasmine.getEnv().addReporter(new HtmlReporter({

@@ -5,7 +5,7 @@ a skeletal framework of how a test automation project should look like
 
 1 Assert that the browser openend the correct url : "open the google search engine".
 
-2 Assert that the google logo image is loaded on the search page.
+2 Assert that the google logo image is loaded on the center of the search page.
 
 3 If you enterd nothing and just clicked search the nothing should be occur.
 
@@ -24,8 +24,8 @@ a skeletal framework of how a test automation project should look like
 11 When user start typing word in text box it should suggest words that matches typed keyword. There should be pre-defined search criteria for auto complete e.g. after typing first 3 letter it should suggest matching keyword
 12 When user clicks on any link from result and navigates back, then result should be maintained
 13 After clicking Search field - search history should be displayed (latest search keyword)
-14 All search keyword/filters should get cleared on clicking Reset button
-15 Search results should be cleared on clicking clear search button
+
+
 16 Pagination should be tested for searches returning high number of records
 17 Total number of search records/results should be displayed on page
 18 Search keyword should get highlighted with color in the search results
